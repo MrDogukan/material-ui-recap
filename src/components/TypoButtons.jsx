@@ -5,36 +5,63 @@ import SendIcon from "@mui/icons-material/Send";
 const TypoButtons = () => {
   return (
     <div>
-      <Container>
+      <Container maxWidth="md">
         <Typography
-          variant="h2"
+          variant="h4"
+          component="h6"
           align="center"
-          component="h4"
-          color="primary"
+          color="error"
           sx={{
-            background: "pink",
-            margin: "auto",
-            border: "2px solid gray",
-            mb: 3,
+            background: "#eee",
+            mt: 4,
+            border: "1px solid green",
           }}
         >
-          Start from here
+          Typography, Buttons, Container, Box
         </Typography>
-        <Typography>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, magnam
-          ab temporibus optio ea, explicabo veniam iste distinctio quidem beatae
-          ex eveniet totam necessitatibus laborum omnis quia a doloremque
-          tenetur?
+
+        <Typography variant="body2" align="justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          deserunt atque fugiat ratione blanditiis earum sed tempora quas
+          voluptas laudantium molestias enim omnis exercitationem culpa labore,
+          velit facilis nobis alias!
+        </Typography>
+
+        <Typography
+          variant="button"
+          align="justify"
+          color="secondary"
+          sx={{ display: "inline-block", mt: 4 }}
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+          deserunt atque fugiat ratione blanditiis earum sed tempora quas
+          voluptas laudantium molestias enim omnis exercitationem culpa labore,
+          velit facilis nobis alias!
         </Typography>
       </Container>
-      <Box sx={{ display: "flex", justifyContent: "center", gap: 1 }}>
-        <Button variant="contained" color="secondary" startIcon={<SendIcon />}>
-          Click
-        </Button>
-        <Button variant="outlined" endIcon={<DeleteIcon />}>
-          Send
-        </Button>
-      </Box>
+
+      <Container maxWidth="md">
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            // justifyContent: 'center',
+            // alignItems: 'center',
+            gap: 2,
+            mt: 4,
+          }}
+        >
+          <Button variant="contained" color="secondary">
+            CLICK
+          </Button>
+          <Button variant="outlined" color="success" startIcon={<SendIcon />}>
+            SEND
+          </Button>
+          <Button variant="contained" color="error" endIcon={<DeleteIcon />}>
+            DELETE
+          </Button>
+        </Box>
+      </Container>
     </div>
   );
 };

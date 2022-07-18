@@ -1,10 +1,15 @@
-import TypoButtons from '../components/TypoButtons';
+import ResponsiveAppBar from "../components/AppBarComp";
+import CardGrid from "../components/CardGrid";
+import TextFieldComp from "../components/TextFieldComp";
+import TypoButtons from "../components/TypoButtons";
 
 const Home = () => {
   return (
     <>
-      <h1>HOME</h1>
+      <ResponsiveAppBar />
       <TypoButtons />
+      <TextFieldComp />
+      <CardGrid />
     </>
   );
 };
