@@ -54,7 +54,7 @@ const TypoButtons = () => {
           <Button variant="contained" color="secondary">
             CLICK
           </Button>
-          <Button variant="outlined" color="success" startIcon={<SendIcon />}>
+          <Button variant="outlined" color="primary" startIcon={<SendIcon />}>
             SEND
           </Button>
           <Button variant="contained" color="error" endIcon={<DeleteIcon />}>
